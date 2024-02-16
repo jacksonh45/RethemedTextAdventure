@@ -21,7 +21,7 @@ const gameOver1 = `Without you carrying the ring MIddle Earth falls. Game Over`
 //Answering 2 will end the game
 const q2 = `You're instructed to head towards the town of Bree. Should you…
 1. Head towards Bree
-	OR
+OR
 2. Head East instead
 ${enter}`
 
@@ -166,7 +166,12 @@ if(userInput == 1){
                                 alert(a9)
                             ]
                         } else {
-                            alert(a71)
+                            alert(a71), userInput = prompt(q8)
+                            if(userInput == 1){
+                                alert(a10)
+                            } else{
+                                alert(a9)
+                            }
                         }
                     } else {
                         alert(w)
@@ -183,7 +188,12 @@ if(userInput == 1){
                                 alert(a9)
                             }
                         } else {
-                            alert(a71)
+                            alert(a71), userInput = prompt(q8)
+                            if(userInput == 1){
+                                alert(a10)
+                            } else{
+                                alert(a9)
+                            }
                         }
                     } else {
                         alert(w)
